@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>getCourses</servlet-name>
+        <servlet-class>escom.getCourses</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getClub</servlet-name>
+        <servlet-class>escom.getClub</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getCourses</servlet-name>
+        <url-pattern>/getCourses</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>addClub</servlet-name>
+        <servlet-class>escom.addClub</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addClub</servlet-name>
+        <url-pattern>/addClub</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getClub</servlet-name>
+        <url-pattern>/getClub</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
